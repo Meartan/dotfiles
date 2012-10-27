@@ -1,0 +1,8 @@
+set guioptions-=m  "remove menu bar
+set guioptions-=M  "remove menu bar, not sourced
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+
+set lines=55 columns=100
+
+set guifont=Anonymous\ 12

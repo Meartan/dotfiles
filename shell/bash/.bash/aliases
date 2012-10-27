@@ -1,0 +1,4 @@
+# misc
+alias reload='. ~/.bash_profile'
+
+alias mysqldump="mysqldump -e -q -R"

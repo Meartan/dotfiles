@@ -1,0 +1,6 @@
+#!/bin/bash
+
+JAVA=/usr/bin/java
+BIN=/home/ariel17/.bin
+
+$JAVA -jar $BIN/tomighty-0.7.1.jar
