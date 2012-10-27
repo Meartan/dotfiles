@@ -1,0 +1,41 @@
+[user]
+	name = Ariel Gerardo Ríos
+	email = ariel.gerardo.rios@gmail.com
+[include]
+    path = $HOME/.gitconfig.local
+[alias]
+    co = checkout
+    ci = commit
+[apply]
+	whitespace = nowarn
+[format]
+	pretty = %C(yellow)%h%Creset %s %C(red)(%cr)%Creset
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+    pager = true
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+[core]
+    excludesfile = $HOME/.gitignore
+    pager = less -FRSX
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    editor = vim
+    autocrlf = input
+[alias]
+    ci = commit
+    co = checkout
+    st = status
+    lg = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    dtc = difftool --cached
+[difftool "Kaleidoscope"]
+    cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+    prompt = false
+[diff]
+    tool = Kaleidoscope    

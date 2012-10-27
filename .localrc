@@ -1,0 +1,14 @@
+# Loading system wide variables
+if [ -f /etc/environment ]; then
+    source /etc/environment
+fi
+
+# Loading custom variables for this environment
+if [ -f ~/.varsrc ]; then
+  source ~/.varsrc
+fi
+
+# Loading custom aliasses for this environment
+if [ -f ~/.aliasrc ]; then
+  source ~/.aliasrc
+fi
