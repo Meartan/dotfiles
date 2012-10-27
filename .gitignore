@@ -1,2 +1,9 @@
 # Current editing files
-.*.sw*
+.*sw[op]
+
+# Vundle pluing installation
+.vim/bundle/*
+
+# Eclim installation
+.vim/eclim
+.vim/plugin/eclim.vim
