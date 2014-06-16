@@ -18,7 +18,7 @@
     ui = true
     pager = true
 [color "status"]
-    added = green
+    added = green bold
     changed = yellow
     untracked = red
 [core]
@@ -34,6 +34,7 @@
     lg = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
     dtc = difftool --cached
 	b = branch
+	r = rebase
 [difftool "Kaleidoscope"]
     cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool]
