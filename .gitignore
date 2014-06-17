@@ -7,3 +7,7 @@
 # Eclim installation
 .vim/eclim
 .vim/plugin/eclim.vim
+
+# Transmission work
+torrents
+resume
