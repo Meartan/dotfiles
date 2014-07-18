@@ -11,3 +11,5 @@
 # Transmission work
 torrents
 resume
+stats.json
+*.dat
