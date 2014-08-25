@@ -40,6 +40,8 @@
 [difftool]
     prompt = false
 [diff]
-    tool = Kaleidoscope    
+	tool = vimdiff
 [push]
 	default = matching
+[merge]
+	tool = vimdiff
