@@ -23,7 +23,7 @@ Plugin 'ColorSchemeMenuMaker'
 Plugin 'desert-warm-256'
 Plugin 'git@github.com:jcf/vim-latex.git'
 Plugin 'octave.vim'
-Plugin 'Shougo/neocomplcache.vim'
+" Plugin 'Shougo/neocomplcache.vim'
 Plugin 'klen/python-mode'
 
 " All of your Plugins must be added before the following line

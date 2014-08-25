@@ -63,4 +63,5 @@ source $HOME/.vim/config/maps
 source $HOME/.vim/config/eclim
 source $HOME/.vim/config/nerdtree
 source $HOME/.vim/config/vim-latex
-source $HOME/.vim/config/neocomplcache
+source $HOME/.vim/config/pymode
+" source $HOME/.vim/config/neocomplcache
