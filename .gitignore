@@ -13,3 +13,6 @@ torrents
 resume
 stats.json
 *.dat
+
+# Metadata files not interested to track
+*netrwhist*
