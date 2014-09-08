@@ -25,10 +25,24 @@ Plugin 'git@github.com:jcf/vim-latex.git'
 Plugin 'octave.vim'
 " Plugin 'Shougo/neocomplcache.vim'
 Plugin 'klen/python-mode'
+Plugin 'majutsushi/tagbar'
+
+
+"" HTML Bundle
+Plugin 'amirh/HTML-AutoCloseTag'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'gorodinskiy/vim-coloresque'
+Plugin 'tpope/vim-haml'
+
+
+"" PHP Bundle
+Plugin 'arnaud-lb/vim-php-namespace'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
