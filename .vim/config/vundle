@@ -26,7 +26,9 @@ Plugin 'octave.vim'
 " Plugin 'Shougo/neocomplcache.vim'
 Plugin 'klen/python-mode'
 Plugin 'majutsushi/tagbar'
-
+Plugin 'Rykka/riv.vim'
+" Plugin 'vim-scripts/rest.vim'
+Plugin 'rodjek/vim-puppet'
 
 "" HTML Bundle
 Plugin 'amirh/HTML-AutoCloseTag'
