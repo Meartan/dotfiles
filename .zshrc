@@ -75,3 +75,4 @@ export LANG=en_US.UTF-8
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 alias tmux="TERM=screen-256color-bce tmux"
+source ~/.bash_aliases
