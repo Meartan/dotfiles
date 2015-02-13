@@ -29,13 +29,13 @@ Plugin 'majutsushi/tagbar'
 Plugin 'Rykka/riv.vim'
 " Plugin 'vim-scripts/rest.vim'
 Plugin 'rodjek/vim-puppet'
+Plugin 'tfnico/vim-gradle'
 
 "" HTML Bundle
 Plugin 'amirh/HTML-AutoCloseTag'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'tpope/vim-haml'
-
 
 "" PHP Bundle
 Plugin 'arnaud-lb/vim-php-namespace'
