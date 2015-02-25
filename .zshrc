@@ -55,8 +55,18 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-source /etc/environment
+# source /etc/environment
 # export MANPATH="/usr/local/man:$MANPATH"
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+fi
+
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
