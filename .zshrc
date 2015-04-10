@@ -48,7 +48,7 @@ ZSH_THEME="clean"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git virtualenvwrapper cp celery django fabric github history pep8 pip postgres python svn tmux aws)
+plugins=(git virtualenvwrapper cp celery django fabric github history pep8 pip postgres python svn tmux)
 
 source $ZSH/oh-my-zsh.sh
 

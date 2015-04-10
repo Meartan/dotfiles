@@ -1,29 +1,5 @@
 servers = (
   { address = "irc.ubuntu.com"; chatnet = "Ubuntu"; port = "8001"; },
-  { address = "eu.irc6.net"; chatnet = "IRCnet"; port = "6667"; },
-  { address = "open.ircnet.net"; chatnet = "IRCnet"; port = "6667"; },
-  { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
-  { 
-    address = "irc.undernet.org";
-    chatnet = "Undernet";
-    port = "6667";
-  },
-  { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
-  { 
-    address = "irc.quakenet.org";
-    chatnet = "QuakeNet";
-    port = "6667";
-  },
-  { address = "irc.oftc.net"; chatnet = "OFTC"; port = "6667"; },
-  {
-    address = "irc.gamesurge.net";
-    chatnet = "GameSurge";
-    port = "6667";
-  },
-  { address = "irc.webchat.org"; chatnet = "WebChat"; port = "6667"; },
-  { address = "irc.rizon.net"; chatnet = "Rizon"; port = "6667"; },
-  { address = "irc.link-net.org"; chatnet = "LinkNet"; port = "6667"; },
-  { address = "silc.silcnet.org"; chatnet = "SILC"; port = "706"; },
   {
     address = "irc.freenode.net";
     chatnet = "Freenode";
@@ -31,85 +7,30 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+  },
+  {
+    address = "movile.irc.slack.com";
+    chatnet = "slack";
+    port = "6667";
+    password = "movile.2ghNONHxsSzq1ij9WHni";
+    use_ssl = "yes";
+    ssl_verify = "no";
+    autoconnect = "yes";
   }
 );
 
 chatnets = {
-  IRCnet = {
-    type = "IRC";
-    max_kicks = "4";
-    max_msgs = "5";
-    max_whois = "4";
-    max_query_chans = "5";
-  };
-  EFNet = { 
-    type = "IRC";
-    max_kicks = "4";
-    max_msgs = "3";
-    max_whois = "1";
-  };
-  Undernet = {
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "3";
-    max_whois = "30";
-  };
-  DALnet = {
-    type = "IRC";
-    max_kicks = "4";
-    max_msgs = "3";
-    max_whois = "30";
-  };
-  QuakeNet = {
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "3";
-    max_whois = "30";
-  };
-  OFTC = { 
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "3";
-    max_whois = "30";
-  };
-  GameSurge = {
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "3";
-    max_whois = "30";
-  };
-  WebChat = {
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "3";
-    max_whois = "30";
-  };
-  Rizon = { 
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "3";
-    max_whois = "30";
-  };
-  LinkNet = {
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "3";
-    max_whois = "30";
-  };
-  SILC = { type = "SILC"; };
   Ubuntu = { type = "IRC"; };
-  Freenode = {
-    type = "IRC";
-    nick = "ariel_17";
-  };
+  Freenode = { type = "IRC"; nick = "ariel_17"; };
+  slack = { type = "IRC"; nick = "ariel.rios"; };
 };
 
 channels = (
   { name = "#cyclelogic"; chatnet = "Freenode"; autojoin = "yes"; },
-  { name = "#hotelhoje"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#pyar"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "##java"; chatnet = "Freenode"; autojoin = "yes"; },
-  { name = "#ml-ng"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#ubuntu"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#ar-release"; chatnet = "slack"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -118,6 +39,7 @@ aliases = {
   WQUERY = "query -window";
   LEAVE = "part";
   BYE = "quit";
+
   EXIT = "quit";
   SIGNOFF = "quit";
   DESCRIBE = "action";
