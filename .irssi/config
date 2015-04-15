@@ -216,4 +216,11 @@ settings = {
     windows_auto_renumber = "yes";
     print_active_channel = "yes";
   };
+  "perl/core/scripts" = { lastfm_user = "Ariel_17_1999"; };
 };
+ignores = (
+  {
+    level = "CRAP MSGS NOTICES SNOTES CTCPS JOINS PARTS QUITS KICKS MODES TOPICS WALLOPS INVITES NICKS DCC DCCMSGS CLIENTNOTICES CLIENTCRAP CLIENTERRORS HILIGHTS";
+    channels = ( "#movile-announce" );
+  }
+);
