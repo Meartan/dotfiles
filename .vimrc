@@ -55,6 +55,10 @@ set numberwidth=5
 set ignorecase
 set smartcase
 
+" split configurations
+set splitright
+set splitbelow
+
 "
 " Import other/custom configurations
 " 
