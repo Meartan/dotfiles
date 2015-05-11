@@ -1,6 +1,6 @@
 {
     "alt-speed-down": 200, 
-    "alt-speed-enabled": true, 
+    "alt-speed-enabled": false, 
     "alt-speed-time-begin": 420, 
     "alt-speed-time-day": 62, 
     "alt-speed-time-enabled": true, 
@@ -78,7 +78,7 @@
     "sort-mode": "sort-by-progress", 
     "sort-reversed": false, 
     "speed-limit-down": 5, 
-    "speed-limit-down-enabled": true, 
+    "speed-limit-down-enabled": false, 
     "speed-limit-up": 10, 
     "speed-limit-up-enabled": true, 
     "start-added-torrents": true, 
