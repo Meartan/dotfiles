@@ -21,8 +21,15 @@ servers = (
 
 chatnets = {
   Ubuntu = { type = "IRC"; };
-  Freenode = { type = "IRC"; nick = "ariel_17"; };
-  slack = { type = "IRC"; nick = "ariel.rios"; };
+  Freenode = {
+    type = "IRC";
+    nick = "ariel_17";
+  };
+  slack = {
+    type = "IRC";
+    nick = "ariel.rios";
+    autosendcmd = "ignore * MODES";
+  };
 };
 
 channels = (
@@ -209,13 +216,6 @@ statusbar = {
         barend = { priority = "100"; alignment = "right"; };
       };
     };
-    awl_2 = {
-      items = {
-        barstart = { priority = "100"; };
-        awl_2 = { };
-        barend = { priority = "100"; alignment = "right"; };
-      };
-    };
   };
 };
 
@@ -243,9 +243,3 @@ settings = {
     awl_viewer = "no";
   };
 };
-ignores = (
-  {
-    level = "CRAP MSGS NOTICES SNOTES CTCPS JOINS PARTS QUITS KICKS MODES TOPICS WALLOPS INVITES NICKS DCC DCCMSGS CLIENTNOTICES CLIENTCRAP CLIENTERRORS HILIGHTS";
-    channels = ( "#movile-announce", "#infra" );
-  }
-);
