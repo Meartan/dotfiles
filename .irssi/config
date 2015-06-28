@@ -24,6 +24,7 @@ chatnets = {
   Freenode = {
     type = "IRC";
     nick = "ariel_17";
+    autosendcmd = "MSG nickserv IDENTIFY password";
   };
   slack = {
     type = "IRC";
@@ -243,3 +244,4 @@ settings = {
     awl_viewer = "no";
   };
 };
+ignores = ( { level = "MODES"; } );
