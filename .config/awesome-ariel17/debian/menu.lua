@@ -170,8 +170,15 @@ Debian_menu["Debian_Help"] = {
 	{"Xman","xman"},
 	{"yelp","/usr/bin/yelp"},
 }
+Debian_menu["Debian_Screen_Locking"] = {
+	{"Xtrlock","xtrlock"},
+}
+Debian_menu["Debian_Screen"] = {
+	{ "Locking", Debian_menu["Debian_Screen_Locking"] },
+}
 Debian_menu["Debian"] = {
 	{ "Applications", Debian_menu["Debian_Applications"] },
 	{ "Games", Debian_menu["Debian_Games"] },
 	{ "Help", Debian_menu["Debian_Help"] },
+	{ "Screen", Debian_menu["Debian_Screen"] },
 }
