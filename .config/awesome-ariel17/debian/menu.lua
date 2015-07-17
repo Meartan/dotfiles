@@ -23,16 +23,11 @@ Debian_menu["Debian_Applications_File_Management"] = {
 	{"Nautilus","/usr/bin/nautilus","/usr/share/pixmaps/nautilus.xpm"},
 }
 Debian_menu["Debian_Applications_Graphics"] = {
-	{"dotty","/usr/bin/dotty"},
-	{"GEM","/usr/bin/pd-gem","/usr/share/pixmaps/gem.xpm"},
-	{"ImageMagick","/usr/bin/display.im6 logo:","/usr/share/pixmaps/display.im6.xpm"},
-	{"lefty","/usr/bin/lefty"},
 	{"LibreOffice Draw","/usr/bin/libreoffice --draw","/usr/share/icons/hicolor/32x32/apps/libreoffice-draw.xpm"},
 	{"The GIMP","/usr/bin/gimp","/usr/share/pixmaps/gimp.xpm"},
 	{"X Window Snapshot","xwd | xwud"},
 }
 Debian_menu["Debian_Applications_Network_Communication"] = {
-	{"Irssi", "x-terminal-emulator -e ".."/usr/bin/irssi"},
 	{"Pidgin","/usr/bin/pidgin","/usr/share/pixmaps/pidgin-menu.xpm"},
 	{"Remmina","/usr/bin/remmina"},
 	{"Telnet", "x-terminal-emulator -e ".."/usr/bin/telnet"},
@@ -41,13 +36,9 @@ Debian_menu["Debian_Applications_Network_Communication"] = {
 Debian_menu["Debian_Applications_Network_File_Transfer"] = {
 	{"Transmission BitTorrent Client (GTK)","/usr/bin/transmission-gtk","/usr/share/pixmaps/transmission.xpm"},
 }
-Debian_menu["Debian_Applications_Network_Web_Browsing"] = {
-	{"Lynx-cur", "x-terminal-emulator -e ".."lynx"},
-}
 Debian_menu["Debian_Applications_Network"] = {
 	{ "Communication", Debian_menu["Debian_Applications_Network_Communication"] },
 	{ "File Transfer", Debian_menu["Debian_Applications_Network_File_Transfer"] },
-	{ "Web Browsing", Debian_menu["Debian_Applications_Network_Web_Browsing"] },
 }
 Debian_menu["Debian_Applications_Office"] = {
 	{"LibreOffice Calc","/usr/bin/libreoffice --calc","/usr/share/icons/hicolor/32x32/apps/libreoffice-calc.xpm"},
@@ -58,15 +49,10 @@ Debian_menu["Debian_Applications_Programming"] = {
 	{"BeanShell (text)", "x-terminal-emulator -e ".."/usr/bin/bsh"},
 	{"BeanShell (windowed)","/usr/bin/xbsh"},
 	{"GDB", "x-terminal-emulator -e ".."/usr/bin/gdb"},
-	{"MySQL Workbench","/usr/bin/mysql-workbench","/usr/share/pixmaps/mysql-workbench.xpm"},
 	{"Python (v2.7)", "x-terminal-emulator -e ".."/usr/bin/python2.7","/usr/share/pixmaps/python2.7.xpm"},
 	{"Python (v3.4)", "x-terminal-emulator -e ".."/usr/bin/python3.4","/usr/share/pixmaps/python3.4.xpm"},
-	{"Ruby (irb1.9.1)", "x-terminal-emulator -e ".."/usr/bin/irb1.9.1"},
 	{"Tclsh8.6", "x-terminal-emulator -e ".."/usr/bin/tclsh8.6"},
 	{"TkWish8.6","x-terminal-emulator -e /usr/bin/wish8.6"},
-}
-Debian_menu["Debian_Applications_Science_Engineering"] = {
-	{"Dia","/usr/bin/dia","/usr/share/pixmaps/dia_menu.xpm"},
 }
 Debian_menu["Debian_Applications_Science_Mathematics"] = {
 	{"Bc", "x-terminal-emulator -e ".."/usr/bin/bc"},
@@ -75,7 +61,6 @@ Debian_menu["Debian_Applications_Science_Mathematics"] = {
 	{"Xcalc","xcalc"},
 }
 Debian_menu["Debian_Applications_Science"] = {
-	{ "Engineering", Debian_menu["Debian_Applications_Science_Engineering"] },
 	{ "Mathematics", Debian_menu["Debian_Applications_Science_Mathematics"] },
 }
 Debian_menu["Debian_Applications_Shells"] = {
@@ -85,6 +70,8 @@ Debian_menu["Debian_Applications_Shells"] = {
 	{"Zsh", "x-terminal-emulator -e ".."/bin/zsh5"},
 }
 Debian_menu["Debian_Applications_Sound"] = {
+	{"gtkGuitune","gtkguitune"},
+	{"lingot","/usr/bin/lingot"},
 	{"Rhythmbox","/usr/bin/rhythmbox","/usr/share/pixmaps/rhythmbox-small.xpm"},
 }
 Debian_menu["Debian_Applications_System_Administration"] = {
@@ -92,19 +79,20 @@ Debian_menu["Debian_Applications_System_Administration"] = {
 	{"Editres","editres"},
 	{"GNOME partition editor","su-to-root -X -c /usr/sbin/gparted","/usr/share/pixmaps/gparted.xpm"},
 	{"pppconfig", "x-terminal-emulator -e ".."su-to-root -p root -c /usr/sbin/pppconfig"},
-	{"TeXconfig", "x-terminal-emulator -e ".."/usr/bin/texconfig"},
 	{"Xclipboard","xclipboard"},
 	{"Xfontsel","xfontsel"},
 	{"Xkill","xkill"},
 	{"Xrefresh","xrefresh"},
 }
 Debian_menu["Debian_Applications_System_Hardware"] = {
+	{"ARandR","arandr"},
 	{"Xvidtune","xvidtune"},
 }
 Debian_menu["Debian_Applications_System_Language_Environment"] = {
 	{"Input Method Configuration", "x-terminal-emulator -e ".."/usr/bin/im-config"},
 }
 Debian_menu["Debian_Applications_System_Monitoring"] = {
+	{"Conky", "x-terminal-emulator -e ".."/usr/bin/conky"},
 	{"GNOME system monitor","/usr/bin/gnome-system-monitor"},
 	{"htop", "x-terminal-emulator -e ".."/usr/bin/htop"},
 	{"Pstree", "x-terminal-emulator -e ".."/usr/bin/pstree.x11","/usr/share/pixmaps/pstree16.xpm"},
@@ -137,7 +125,6 @@ Debian_menu["Debian_Applications_Text"] = {
 }
 Debian_menu["Debian_Applications_Video"] = {
 	{"Totem","/usr/bin/totem","/usr/share/pixmaps/totem.xpm"},
-	{"VLC media player","/usr/bin/qvlc","/usr/share/icons/hicolor/32x32/apps/vlc.xpm"},
 }
 Debian_menu["Debian_Applications_Viewers"] = {
 	{"docker","/usr/bin/wmdocker"},
@@ -145,7 +132,6 @@ Debian_menu["Debian_Applications_Viewers"] = {
 	{"Eye of GNOME","/usr/bin/eog","/usr/share/pixmaps/gnome-eog.xpm"},
 	{"Shotwell","/usr/bin/shotwell"},
 	{"Xditview","xditview"},
-	{"XDvi","/usr/bin/xdvi"},
 }
 Debian_menu["Debian_Applications"] = {
 	{ "Accessibility", Debian_menu["Debian_Applications_Accessibility"] },
@@ -165,9 +151,6 @@ Debian_menu["Debian_Applications"] = {
 	{ "Video", Debian_menu["Debian_Applications_Video"] },
 	{ "Viewers", Debian_menu["Debian_Applications_Viewers"] },
 }
-Debian_menu["Debian_Games_Action"] = {
-	{"alien-arena","/usr/games/alien-arena --quiet","/usr/share/pixmaps/alien-arena.xpm"},
-}
 Debian_menu["Debian_Games_Card"] = {
 	{"Gnome Solitaire Games","/usr/games/sol","/usr/share/pixmaps/aisleriot.xpm"},
 }
@@ -179,13 +162,11 @@ Debian_menu["Debian_Games_Toys"] = {
 	{"Xlogo","xlogo"},
 }
 Debian_menu["Debian_Games"] = {
-	{ "Action", Debian_menu["Debian_Games_Action"] },
 	{ "Card", Debian_menu["Debian_Games_Card"] },
 	{ "Toys", Debian_menu["Debian_Games_Toys"] },
 }
 Debian_menu["Debian_Help"] = {
 	{"Info", "x-terminal-emulator -e ".."info"},
-	{"TeXdoctk","/usr/bin/texdoctk"},
 	{"Xman","xman"},
 	{"yelp","/usr/bin/yelp"},
 }
