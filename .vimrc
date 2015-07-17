@@ -68,4 +68,5 @@ source $HOME/.vim/config/eclim
 source $HOME/.vim/config/nerdtree
 source $HOME/.vim/config/vim-latex
 source $HOME/.vim/config/pymode
+source $HOME/.vim/config/pdv-standalone
 " source $HOME/.vim/config/neocomplcache

@@ -39,7 +39,7 @@ Plugin 'tpope/vim-haml'
 
 "" PHP Bundle
 Plugin 'arnaud-lb/vim-php-namespace'
-
+Plugin 'mikehaertl/pdv-standalone'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
