@@ -1,5 +1,5 @@
 # Current editing files
-.*sw[op]
+.*sw[opn]
 
 # Vundle pluing installation
 .vim/bundle/*
