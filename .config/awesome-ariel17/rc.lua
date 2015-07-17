@@ -240,9 +240,11 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1)         end),
     awful.key({ modkey,           }, "space", function () awful.layout.inc(layouts,  1) end),
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
-    awful.key({modkey,            }, "F1",    function () awful.screen.focus(1)         end),
+    awful.key({ modkey, "Control" }, "n",     awful.client.restore),
 
-    awful.key({ modkey, "Control" }, "n", awful.client.restore),
+    -- 
+    awful.key({modkey,            }, "F1",    function () awful.screen.focus(1)         end),
+    awful.key({modkey,            }, "F2",    function () awful.screen.focus(2)         end),
 
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
@@ -274,7 +276,7 @@ clientkeys = awful.util.table.join(
         function (c)
             c.maximized_horizontal = not c.maximized_horizontal
             c.maximized_vertical   = not c.maximized_vertical
-        end),
+        end)
 )
 
 -- Compute the maximum number of digit we need, limited to 9
