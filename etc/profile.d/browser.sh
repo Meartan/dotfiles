@@ -1,1 +1,1 @@
-BROWSER="chromium-browser"
+export BROWSER="chromium-browser"
