@@ -125,6 +125,7 @@ Debian_menu["Debian_Applications_Text"] = {
 }
 Debian_menu["Debian_Applications_Video"] = {
 	{"Totem","/usr/bin/totem","/usr/share/pixmaps/totem.xpm"},
+	{"VLC media player","/usr/bin/qvlc","/usr/share/icons/hicolor/32x32/apps/vlc.xpm"},
 }
 Debian_menu["Debian_Applications_Viewers"] = {
 	{"docker","/usr/bin/wmdocker"},
