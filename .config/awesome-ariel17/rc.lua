@@ -48,6 +48,18 @@ terminal = "x-terminal-emulator"
 editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
+-- Other applications
+pidgin = "pidgin"
+skype = "skype"
+spotify = "spotify"
+browser = "sensible-browser"
+firefox = "firefox"
+dbeaver = "/usr/share/dbeaver/dbeaver"
+scudcloud = "scudcloud"
+gvim = "gvim"
+transmission = "transmission-gtk"
+nautilus = "nautilus --no-desktop"
+
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,
@@ -260,6 +272,16 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
     awful.key({ modkey, "Control" }, "n",     awful.client.restore),
     awful.key({ modkey, "Control" }, "l",     function () awful.util.spawn("xtrlock")   end),
+    awful.key({ modkey,           }, "p",     function () awful.util.spawn(pidgin)      end),
+    awful.key({ modkey,           }, "k",     function () awful.util.spawn(skype)       end),
+    awful.key({ modkey,           }, "s",     function () awful.util.spawn(spotify)     end),
+    awful.key({ modkey,           }, "b",     function () awful.util.spawn(browser)     end),
+    awful.key({ modkey,           }, "f",     function () awful.util.spawn(firefox)     end),
+    awful.key({ modkey,           }, "d",     function () awful.util.spawn(dbeaver)     end),
+    awful.key({ modkey,           }, "z",     function () awful.util.spawn(scudcloud)   end),
+    awful.key({ modkey,           }, "g",     function () awful.util.spawn(gvim)        end),
+    awful.key({ modkey,           }, "t",     function () awful.util.spawn(transmission) end),
+    awful.key({ modkey,           }, "h",     function () awful.util.spawn(nautilus)    end),
 
     -- Screens
     awful.key({modkey,            }, "F1",    function () awful.screen.focus(1)         end),
@@ -372,6 +394,12 @@ awful.rules.rules = {
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },
+    { rule = { class = "Spotify" },
+      properties = { tag = tags[1][7] } },
+    { rule = { class = "Pidgin" },
+      properties = { tag = tags[1][4] } },
+    { rule = { name = "ScudCloud" },
+      properties = { tag = tags[1][4] } },
 }
 -- }}}
 
@@ -408,3 +436,4 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 
 -- Autostart applications
 awful.util.spawn_with_shell("conky")
+awful.util.spawn_with_shell("dropbox start")
