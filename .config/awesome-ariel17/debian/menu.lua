@@ -29,6 +29,9 @@ Debian_menu["Debian_Applications_Graphics"] = {
 }
 Debian_menu["Debian_Applications_Network_Communication"] = {
 	{"Pidgin","/usr/bin/pidgin","/usr/share/pixmaps/pidgin-menu.xpm"},
+	{"Skype","/usr/bin/skype","/usr/share/pixmaps/skype.png"},
+	{"ScudCloud","/usr/bin/scudcloud",""},
+	{"irssi","/usr/bin/irssi",""},
 	{"Remmina","/usr/bin/remmina"},
 	{"Telnet", "x-terminal-emulator -e ".."/usr/bin/telnet"},
 	{"Xbiff","xbiff"},
@@ -48,6 +51,7 @@ Debian_menu["Debian_Applications_Office"] = {
 Debian_menu["Debian_Applications_Programming"] = {
 	{"BeanShell (text)", "x-terminal-emulator -e ".."/usr/bin/bsh"},
 	{"BeanShell (windowed)","/usr/bin/xbsh"},
+	{"Eclipse","/usr/bin/env eclipse"},
 	{"GDB", "x-terminal-emulator -e ".."/usr/bin/gdb"},
 	{"Python (v2.7)", "x-terminal-emulator -e ".."/usr/bin/python2.7","/usr/share/pixmaps/python2.7.xpm"},
 	{"Python (v3.4)", "x-terminal-emulator -e ".."/usr/bin/python3.4","/usr/share/pixmaps/python3.4.xpm"},
@@ -71,6 +75,7 @@ Debian_menu["Debian_Applications_Shells"] = {
 }
 Debian_menu["Debian_Applications_Sound"] = {
 	{"gtkGuitune","gtkguitune"},
+	{"Spotify","/usr/bin/spotify"},
 	{"lingot","/usr/bin/lingot"},
 	{"Rhythmbox","/usr/bin/rhythmbox","/usr/share/pixmaps/rhythmbox-small.xpm"},
 }
@@ -162,9 +167,13 @@ Debian_menu["Debian_Games_Toys"] = {
 	{"Xeyes","xeyes"},
 	{"Xlogo","xlogo"},
 }
+Debian_menu["Debian_Games_Online"] = {
+	{"Steam","/usr/games/steam","/usr/share/pixmaps/steam.png"},
+}
 Debian_menu["Debian_Games"] = {
 	{ "Card", Debian_menu["Debian_Games_Card"] },
 	{ "Toys", Debian_menu["Debian_Games_Toys"] },
+	{ "On Line", Debian_menu["Debian_Games_Online"] },
 }
 Debian_menu["Debian_Help"] = {
 	{"Info", "x-terminal-emulator -e ".."info"},
