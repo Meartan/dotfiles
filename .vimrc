@@ -25,6 +25,7 @@ syntax on
 set hlsearch
 
 " Colors
+syntax enable
 colorscheme lucius
 highlight Comment term=bold ctermfg=2
 highlight Constant term=underline ctermfg=7
