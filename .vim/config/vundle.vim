@@ -19,27 +19,35 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'msanders/snipmate.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'ColorSchemeMenuMaker'
 Plugin 'desert-warm-256'
 Plugin 'git@github.com:jcf/vim-latex.git'
 Plugin 'octave.vim'
-" Plugin 'Shougo/neocomplcache.vim'
 Plugin 'klen/python-mode'
 Plugin 'majutsushi/tagbar'
-Plugin 'Rykka/riv.vim'
-" Plugin 'vim-scripts/rest.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'tfnico/vim-gradle'
-
-"" HTML Bundle
 Plugin 'amirh/HTML-AutoCloseTag'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'tpope/vim-haml'
-
-"" PHP Bundle
 Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'mikehaertl/pdv-standalone'
+Plugin 't9md/vim-chef'
+
+" Airline
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'edkolev/tmuxline.vim'
+
+" Clojure
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-salve'
+Plugin 'tpope/vim-projectionist'
+Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/paredit'
+Plugin 'venantius/vim-eastwood'
+Plugin 'venantius/vim-cljfmt'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

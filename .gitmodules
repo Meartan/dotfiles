@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/Vundle.vim"]
 	path = .vim/bundle/Vundle.vim
 	url = git@github.com:gmarik/Vundle.vim.git
+[submodule ".config/awesome-ariel17/pomodoro"]
+	path = .config/awesome-ariel17/pomodoro
+	url = git://github.com/nikolavp/awesome-pomodoro.git

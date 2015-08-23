@@ -12,6 +12,7 @@ set history=500  " 500 commands to remember
 set ruler  " show the cursor position all the time
 set showcmd  " display incomplete commands
 set incsearch  " do incremental searching
+set encoding=utf-8
 
 " Enabling colors in console
 if (!has("gui_running"))
@@ -63,11 +64,12 @@ set splitbelow
 "
 " Import other/custom configurations
 " 
-source $HOME/.vim/config/vundle
-source $HOME/.vim/config/maps
-source $HOME/.vim/config/eclim
-source $HOME/.vim/config/nerdtree
-source $HOME/.vim/config/vim-latex
-source $HOME/.vim/config/pymode
-source $HOME/.vim/config/pdv-standalone
-" source $HOME/.vim/config/neocomplcache
+source $HOME/.vim/config/vundle.vim
+source $HOME/.vim/config/maps.vim
+source $HOME/.vim/config/eclim.vim
+source $HOME/.vim/config/nerdtree.vim
+source $HOME/.vim/config/vim-latex.vim
+source $HOME/.vim/config/pymode.vim
+source $HOME/.vim/config/pdv-standalone.vim
+source $HOME/.vim/config/chef.vim
+source $HOME/.vim/config/airline.vim
