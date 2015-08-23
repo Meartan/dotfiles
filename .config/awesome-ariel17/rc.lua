@@ -13,6 +13,7 @@ require("debian.menu")
 -- Custom widgets
 require("volume")
 require("calendar2")
+require("pomodoro")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -57,6 +58,7 @@ firefox = "firefox"
 dbeaver = "/usr/share/dbeaver/dbeaver"
 scudcloud = "scudcloud"
 gvim = "gvim"
+vim = "gnome-terminal -x sh -c vim"
 transmission = "transmission-gtk"
 nautilus = "nautilus --no-desktop"
 
@@ -198,6 +200,7 @@ for s = 1, screen.count() do
         mylayoutbox[s],
         mytextclock,
         volume_widget,
+        pomodoro.widget,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
@@ -280,6 +283,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "d",     function () awful.util.spawn(dbeaver)     end),
     awful.key({ modkey,           }, "z",     function () awful.util.spawn(scudcloud)   end),
     awful.key({ modkey,           }, "g",     function () awful.util.spawn(gvim)        end),
+    awful.key({ modkey,           }, "v",     function () awful.util.spawn(vim)        end),
     awful.key({ modkey,           }, "t",     function () awful.util.spawn(transmission) end),
     awful.key({ modkey,           }, "h",     function () awful.util.spawn(nautilus)    end),
 
@@ -437,3 +441,4 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- Autostart applications
 awful.util.spawn_with_shell("conky")
 awful.util.spawn_with_shell("dropbox start")
+awful.util.spawn_with_shell("nm-applet")
