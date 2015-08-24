@@ -14,6 +14,7 @@ require("debian.menu")
 require("volume")
 require("calendar2")
 require("pomodoro")
+require("battery")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -200,6 +201,7 @@ for s = 1, screen.count() do
         mylayoutbox[s],
         mytextclock,
         volume_widget,
+        mybattmon,
         pomodoro.widget,
         s == 1 and mysystray or nil,
         mytasklist[s],
