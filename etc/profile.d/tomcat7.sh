@@ -1,0 +1,1 @@
+export TOMCAT_HOME="/var/lib/tomcat7"
