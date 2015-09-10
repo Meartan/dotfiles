@@ -45,9 +45,9 @@ Plugin 'tpope/vim-salve'
 Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-surround'
-Plugin 'vim-scripts/paredit'
+" Plugin 'vim-scripts/paredit.vim'
 Plugin 'venantius/vim-eastwood'
-Plugin 'venantius/vim-cljfmt'
+" Plugin 'venantius/vim-cljfmt'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

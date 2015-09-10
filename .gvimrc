@@ -7,3 +7,4 @@ set guioptions-=M  "remove menu bar, not sourced
 set guioptions-=e
 
 set lines=55 columns=100
+set guifont=Liberation\ Mono\ for\ Powerline\ 16
