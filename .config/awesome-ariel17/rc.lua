@@ -100,6 +100,11 @@ end
 -- {{{ Menu
 -- Create a laucher widget and a main menu
 myawesomemenu = {
+   { "screenlayout", {
+       { "Home", "/home/ariel17/.screenlayout/home.sh" },
+       { "Single", "/home/ariel17/.screenlayout/single.sh" },
+       { "Work", "/home/ariel17/.screenlayout/work.sh" }
+   }},
    { "manual", terminal .. " -e man awesome" },
    { "edit config", editor_cmd .. " " .. awesome.conffile },
    { "restart", awesome.restart },
