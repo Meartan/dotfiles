@@ -28,6 +28,7 @@ Debian_menu["Debian_Applications_Graphics"] = {
 	{"X Window Snapshot","xwd | xwud"},
 }
 Debian_menu["Debian_Applications_Network_Communication"] = {
+	{"Irssi", "x-terminal-emulator -e ".."/usr/bin/irssi"},
 	{"Pidgin","/usr/bin/pidgin","/usr/share/pixmaps/pidgin-menu.xpm"},
 	{"Remmina","/usr/bin/remmina"},
 	{"Telnet", "x-terminal-emulator -e ".."/usr/bin/telnet"},
