@@ -33,6 +33,7 @@ Plugin 'tpope/vim-haml'
 Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'mikehaertl/pdv-standalone'
 Plugin 't9md/vim-chef'
+Plugin 'mattn/emmet-vim'  " zen coding
 
 " Airline
 Plugin 'bling/vim-airline'
