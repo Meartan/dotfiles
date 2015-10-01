@@ -413,6 +413,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][4] } },
     { rule = { name = "ScudCloud" },
       properties = { tag = tags[1][4] } },
+    { rule = { class = "Gvim" },
+      properties = { tag = tags[1][3] } },
 }
 -- }}}
 
