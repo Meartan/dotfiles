@@ -37,9 +37,13 @@ Debian_menu["Debian_Applications_Network_Communication"] = {
 Debian_menu["Debian_Applications_Network_File_Transfer"] = {
 	{"Transmission BitTorrent Client (GTK)","/usr/bin/transmission-gtk","/usr/share/pixmaps/transmission.xpm"},
 }
+Debian_menu["Debian_Applications_Network_Web_Browsing"] = {
+	{"Lynx-cur", "x-terminal-emulator -e ".."lynx"},
+}
 Debian_menu["Debian_Applications_Network"] = {
 	{ "Communication", Debian_menu["Debian_Applications_Network_Communication"] },
 	{ "File Transfer", Debian_menu["Debian_Applications_Network_File_Transfer"] },
+	{ "Web Browsing", Debian_menu["Debian_Applications_Network_Web_Browsing"] },
 }
 Debian_menu["Debian_Applications_Office"] = {
 	{"LibreOffice Calc","/usr/bin/libreoffice --calc","/usr/share/icons/hicolor/32x32/apps/libreoffice-calc.xpm"},
@@ -52,7 +56,13 @@ Debian_menu["Debian_Applications_Programming"] = {
 	{"GDB", "x-terminal-emulator -e ".."/usr/bin/gdb"},
 	{"Python (v2.7)", "x-terminal-emulator -e ".."/usr/bin/python2.7","/usr/share/pixmaps/python2.7.xpm"},
 	{"Python (v3.4)", "x-terminal-emulator -e ".."/usr/bin/python3.4","/usr/share/pixmaps/python3.4.xpm"},
+	{"Qt4 Assistant","/usr/lib/*/qt4/bin/assistant"},
+	{"Qt4 Designer","/usr/lib/*/qt4/bin/designer"},
+	{"Qt4 Linguist","/usr/lib/*/qt4/bin/linguist"},
+	{"Ruby (irb1.9.1)", "x-terminal-emulator -e ".."/usr/bin/irb1.9.1"},
+	{"Tclsh8.5", "x-terminal-emulator -e ".."/usr/bin/tclsh8.5"},
 	{"Tclsh8.6", "x-terminal-emulator -e ".."/usr/bin/tclsh8.6"},
+	{"TkWish8.5","x-terminal-emulator -e /usr/bin/wish8.5"},
 	{"TkWish8.6","x-terminal-emulator -e /usr/bin/wish8.6"},
 }
 Debian_menu["Debian_Applications_Science_Mathematics"] = {

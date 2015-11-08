@@ -13,7 +13,6 @@ require("debian.menu")
 -- Custom widgets
 require("volume")
 require("calendar2")
-require("pomodoro")
 require("battery")
 
 -- {{{ Error handling
@@ -62,6 +61,7 @@ gvim = "gvim"
 vim = "gnome-terminal -x sh -c vim"
 transmission = "transmission-gtk"
 nautilus = "nautilus --no-desktop"
+pomodoro = "java -jar /opt/tomighty-0.8.0.jar"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -207,7 +207,6 @@ for s = 1, screen.count() do
         mytextclock,
         volume_widget,
         mybattmon,
-        pomodoro.widget,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
@@ -415,6 +414,10 @@ awful.rules.rules = {
       properties = { tag = tags[1][4] } },
     { rule = { class = "Gvim" },
       properties = { tag = tags[1][3] } },
+    { rule = { name = "Terminal" },
+      properties = { tag = tags[1][2] } },
+    { rule = { name = "Skype" },
+      properties = { tag = tags[1][4] } },
 }
 -- }}}
 
@@ -453,3 +456,4 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 awful.util.spawn_with_shell("conky")
 awful.util.spawn_with_shell("dropbox start")
 awful.util.spawn_with_shell("nm-applet")
+awful.util.spawn_with_shell(pomodoro)
