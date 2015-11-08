@@ -34,6 +34,7 @@ Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'mikehaertl/pdv-standalone'
 Plugin 't9md/vim-chef'
 Plugin 'mattn/emmet-vim'  " zen coding
+Plugin 'stegtmeyer/find-complete'
 
 " Airline
 Plugin 'bling/vim-airline'
@@ -49,6 +50,9 @@ Plugin 'tpope/vim-surround'
 " Plugin 'vim-scripts/paredit.vim'
 Plugin 'venantius/vim-eastwood'
 " Plugin 'venantius/vim-cljfmt'
+
+" Ansible
+Plugin 'chase/vim-ansible-yaml'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
